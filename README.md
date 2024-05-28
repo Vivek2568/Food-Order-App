@@ -61,3 +61,17 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(heading); ----> way to render react element
 root.render(<Headingcomponent/>)  ---> way to render react component
+
+# REACT HOOKS
+Normal js utility functions
+-UseState()
+-UseEffect()
+-whenever a state variable update react Rerender the component
+
+# Reconciliation Algorithm (React fiber)
+  Q-why react is fast??
+  Ans- becz it is doing operation on virtual dom  
+  virtual dom is javascript object
+ -DIFF algorithm 
+  whenever is change in the state variable diff algorithm finds the difference between two virtual DOM (old and new)  on every render
+   
