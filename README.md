@@ -65,8 +65,17 @@ root.render(<Headingcomponent/>)  ---> way to render react component
 # REACT HOOKS
 Normal js utility functions
 -UseState()
--UseEffect()
 -whenever a state variable update react Rerender the component
+
+-UseEffect()
+   useeffect(()=>{
+    callback function
+   },[]) //syntax
+ working as soon as body or react component renders finishes  it callback function get called and rerender the UI
+
+
+ FETCH -> a function given by js engine or browser to fetch data from APIs
+   
 
 # Reconciliation Algorithm (React fiber)
   Q-why react is fast??
@@ -75,3 +84,9 @@ Normal js utility functions
  -DIFF algorithm 
   whenever is change in the state variable diff algorithm finds the difference between two virtual DOM (old and new)  on every render
    
+# MICRO SERVICES and MONOLITH ARCHITECTURE
+ Monolith-> all services like Backend ,UI, API authentication, databases ,sms sending etc are  
+ in the same project  whenever we changes anything we need to compile and deploy the whole project.
+
+Microservices architecture-> all services like Backend ,UI, API authentication, databases ,sms sending etc are  
+acts as individual and run on different ports and connect eah other for comuunication whenever we changes anything noK need to compile and deploy the whole project.
