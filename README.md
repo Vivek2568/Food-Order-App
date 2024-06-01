@@ -90,3 +90,14 @@ Normal js utility functions
 
 Microservices architecture-> all services like Backend ,UI, API authentication, databases ,sms sending etc are  
 acts as individual and run on different ports and connect eah other for comuunication whenever we changes anything noK need to compile and deploy the whole project.
+
+# LINK and Anchor tag
+  Anchor-> refresh the whole page when we go from one page to another page { about us -> home header & body component both reload}
+
+ LINK -> doesn't refresh the whole page when we go from one page to another page only the component   renders { about us -> home header will not render only body component refreshes}
+
+# Types of routing
+ 1. Client Side Routing
+ 2. Server Side Routing
+ 3. server -> when we try to make calls from server it fetches and reload the page
+ 4.  client-> already every component is present  only refreshes occur in our app in SPA.  
