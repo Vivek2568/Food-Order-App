@@ -7,7 +7,7 @@ const RestaurantMenu = () => {
   const { resId } = useParams();
   const resInfo = useRestaurantMenu(resId);
   const [showIndex, setshowIndex]=useState();
-  console.log(resInfo);
+  //console.log(resInfo);
   if (resInfo == null) return <Shimmer />;
   const { name, cuisines, costForTwoMessage } =
     resInfo?.cards[2]?.card?.card?.info;

@@ -157,3 +157,10 @@ acts as individual and run on different ports and connect eah other for comuunic
 
  uncontrolled-> which are uncontrolled bu their own state varicables;
   [see Restaurantcategory and itemlist  bye showitems variable as a exmple] 
+
+# REDUX
+  
+  click --> (dispatch)action -->  reducer(fn) --> slice(strore)
+                                                          
+
+  (cart)updated  <--   selector(subscribed)  <-- slice (store )
