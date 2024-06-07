@@ -9,12 +9,12 @@ const Header = () => {
   const onlineStatus=useOnlineStatus();
   const cartItems = useSelector((store)=>store.cart.items)
   return (
-    <div className="flex justify-between m-4 bg-green-100">
-      <div className="logo-container">
-        <img className="w-48" src={LOGO_URL} />
+    <div className="flex justify-between m-4 mx-auto h-20  w-2/3 bg-gray-50">
+      <div className="">
+        <img className=" mt-1 w-24 rounded-lg" src={LOGO_URL} />
       </div>
       <div className="flex item-center">
-        <ul className="flex p-4 m-4  items-center gap-6 font-semibold text-lg">
+        <ul className="flex p-4 m-4  items-center gap-6 font-bold  font-serif text-lg">
           <li>Online Status:{(onlineStatus==true)?"✅": "🔴"} </li>
           <li><Link to="/">Home</Link></li>
           <li>

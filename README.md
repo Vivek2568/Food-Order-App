@@ -152,7 +152,7 @@ acts as individual and run on different ports and connect eah other for comuunic
  3. server -> when we try to make calls from server it fetches and reload the page
  4.  client-> already every component is present  only refreshes occur in our app in SPA.  
    
-# Controlled ans Uncontrolled copmponant
+# Controlled ans Uncontrolled componant
  controlled-> which are controlled by their parent states 
 
  uncontrolled-> which are uncontrolled bu their own state varicables;
@@ -164,3 +164,9 @@ acts as individual and run on different ports and connect eah other for comuunic
                                                           
 
   (cart)updated  <--   selector(subscribed)  <-- slice (store )
+
+# Testing (developer)
+
+- Unit testing  (for particular componant )
+- Integration testing 
+- E2E testing
