@@ -32,16 +32,16 @@ const Body = () => {
   if (checkstatus == false)
     return <h1>Something Went wrong!! check your connection;</h1>;
   // conditional rendering
-  // if (listofRes.length == 0) {
-  //   return <Shimmer />;
-  // }
+  if (listofRes?.length == 0) {
+    return <Shimmer />;
+  }
   // const clickhandler = () => {
   //   setShowLoadMore(true); // Toggle the state to show LoadMoreComponant
   // };
   return (
     <div className="px-36 ">
       <div className="pt-4">
-        <div className="rounded-2xl flex sm:w-1/2 h-16  justify-center mx-[25%] bg-gray-100 ">
+        <div className="rounded-2xl flex sm:w-1/2 h-16  justify-center mx-[25%] bg-red-100 ">
           <div className=" flex flex-wrap justify-center">
             <div className="search  p-1 gap-4">
               <input
@@ -83,7 +83,7 @@ const Body = () => {
           </div>
         </div>
         <div className="flex flex-wrap pt-8">
-          {filteredRestaurents.map((restaurent) => (
+          {filteredRestaurents?.map((restaurent) => (
             <Link
               to={"/restaurants/" + restaurent.info.id}
               key={restaurent.info.id}
